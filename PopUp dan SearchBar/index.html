@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind Config -->
+    <script src="tailwind.config.js"></script>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        nav a {
+          @apply text-nav hover:text-black font-raleway;
+        }
+
+        nav a.active {
+          @apply text-black;
+        }
+        .button-primary {
+          @apply bg-primary py-[16px] px-[32px] text-white rounded-full hover:bg-secondary;
+        }
+
+        .text-gradient {
+          background: linear-gradient(90.01deg, #e18700 35.24%, #ff32ad 66.21%, #0ec5d7 97.18%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+        .service-texture {
+          background: url(img/background.png);
+          background-size: cover;
+        }
+        .service-texture-2 {
+          background: url(img/bgKecil.png);
+          background-size: cover;
+        }
+        .button-secondary {
+          @apply py-[8px] px-[24px] mr-[14px] border-2;
+        }
+        .backgroung-gradient {
+          background: linear-gradient(90.01deg, #0ec5d7 97.18%, #ff32ad 66.21%, #e18700 35.24%);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-header">
+      <section class="container mx-auto py-[16]">
+        <section id="topbar" class="flex justify-between items-center py-5">
+          <div id="left-side" class="flex gap-10 items-center">
+            <div class="flex items-center gap-2">
+              <img src="img/Logo.png" alt="" />
+              <h1 class="font-bold">Mangcoding</h1>
+            </div>
+            <nav>
+              <ul class="flex gap-16 items-center">
+                <li><a href="#" class="active">Home</a></li>
+                <li class="menu">
+                  <a href="#">About</a>
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="right-side" class="flex items-center gap-10">
+            <div class="input-box relative">
+              <input type="text" placeholder="Search..." />
+              <span class="icon">
+                <i class="uil uil-search search-icon"></i>
+              </span>
+              <i class="uil uil-times close-icon"></i>
+            </div>
+            <a href="#get-started" class="button-primary">Get Started</a>
+          </div>
+        </section>
+      </section>
+      <section id="hero" class="flex flex-col gap-5">
+        <div class="max-w-[700px] mx-auto mt-[100px]">
+          <h1 class="text-2xl lg:text-4xl xl:text-5xl text-center font-raleway font-bold">It's Fun To Build a Website With The <span class="text-gradient">Mangcoding Team</span></h1>
+          <p class="text-center py-5 font-raleway fontColor">The Mangcoding team will help build a website for your company with quality and guaranteed services, with custom templates you can create a website as you like.</p>
+        </div>
+        <div class="action mx-auto flex justify-center items-center gap-10">
+          <a href="#get-started" class="button-primary">Get Started</a>
+          <a href="#" class="underline flex items-center gap-5 hover:no-underline">Explore our blog <img src="img/arrow.png" alt="" /></a>
+        </div>
+        <img src="img/hero.png" alt="" class="mx-auto" />
+      </section>
+    </header>
+    <main class="">
+      <section id="brand" class="text-center">
+        <h1 class="font-semibold">Brands that trust us</h1>
+        <div class="brands flex gap-[60px] justify-center items-center">
+          <div class="single-brand">
+            <img src="img/brand/image 1.png" alt="" />
+          </div>
+          <div class="single-brand">
+            <img src="img/brand/image 2.png" alt="" />
+          </div>
+          <div class="single-brand">
+            <img src="img/brand/image 3.png" alt="" />
+          </div>
+          <div class="single-brand">
+            <img src="img/brand/image 4.png" alt="" />
+          </div>
+          <div class="single-brand">
+            <img src="img/brand/Frame.png" alt="" />
+          </div>
+          <div class="single-brand">
+            <img src="img/brand/image 5.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="service" class="service-texture">
+        <div class="main-service">
+          <h1 class="font-bold">Services</h1>
+          <p>
+            <span>Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, på</span>
+            <span>trekavis. Makrona tregät plang. Bekässade kast, eftersom sore.</span>
+          </p>
+          <a href="#get-started" class="button-primary">Build Website</a>
+          <div class="service">
+            <div class="services rounded-lg shopify text-center">
+              <img src="img/service/Shopify.png" alt="" class="mx-auto" />
+              <div class="title">
+                <h5 class="font-bold">Shopify Theme Development</h5>
+                <p>Start from 700 USD for project base or 35 USD per hour</p>
+              </div>
+            </div>
+            <div class="services rounded-lg php">
+              <img src="img/service/PHP.png" alt="" class="mx-auto" />
+              <div class="title">
+                <h5 class="font-bold">Web Application Development</h5>
+                <p>Start from 1000 USD for project base or 35 USD per hour</p>
+              </div>
+            </div>
+            <div class="services rounded-lg wordpress">
+              <img src="img/service/wordpress.png" alt="" class="mx-auto" />
+              <div class="title">
+                <h5 class="font-bold">WordPress Theme Development</h5>
+                <p>Start from 600 USD for project base or 35 USD per hour</p>
+              </div>
+            </div>
+            <div class="services rounded-lg www">
+              <img src="img/service/www.png" alt="" class="mx-auto" />
+              <div class="title">
+                <h5 class="font-bold">Custom App/Plugins Development</h5>
+                <p>Start from 300 USD for project base or 35 USD per hour</p>
+              </div>
+            </div>
+            <div class="rounded-lg assistans">
+              <img src="img/service/assistans 2.png" alt="" class="mx-auto" />
+              <div class="title">
+                <h4 class="font-bold">Assistans Services</h4>
+                <p>Start from 33 USD for project base or 35 USD per hour</p>
+              </div>
+              <div class="title-2">
+                <p class="">More Services :</p>
+                <h4 class="font-bold">
+                  <span>Technical Assistans</span>
+                  <span>Support Assistans</span>
+                  <span>VIP Assistans</span>
+                  <span>Social Media Admin</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work">
+        <div class="title text-center">
+          <h1 class="font-bold">What we do</h1>
+          <p>
+            <span>Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora, på</span>
+            <span>trekavis. Makrona tregät plang. Bekässade kast, eftersom sore.</span>
+          </p>
+        </div>
+        <div class="work flex">
+          <div class="child-work text-center">
+            <img src="img/work/work 1.png" alt="" class="mx-auto" />
+            <h5>Design</h5>
+            <p>Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+          </div>
+          <div class="child-work text-center">
+            <img src="img/work/work 2.png" alt="" class="mx-auto" />
+            <h5>Back-end</h5>
+            <p>Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+          </div>
+          <div class="child-work text-center">
+            <img src="img/work/work 3.png" alt="" class="mx-auto" />
+            <h5>Back-end</h5>
+            <p>Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+          </div>
+          <div class="child-work text-center">
+            <img src="img/work/work 4.png" alt="" class="mx-auto" />
+            <h5>Check Test</h5>
+            <p>Create Wireframe Display Designs And Initial UI Designs For Websites</p>
+          </div>
+        </div>
+      </section>
+      <section id="our-work">
+        <div class="title text-center">
+          <h1 class="font-bold">Our work</h1>
+          <p>Lörem ipsum patev antifili astrokålonat. Vanat aheten. Ekofiering makrora,</p>
+        </div>
+        <div class="our-work flex flex-wrap justify-evenly">
+          <div class="child-ourWork">
+            <img src="img/work/Frame 1.png" alt="" />
+            <h1>Retainer Orely Studio</h1>
+            <a href="" class="mb-[24px] block">https://retainer.orely.co/</a>
+            <a href="" class="button-secondary">WordPress</a>
+            <a href="" class="button-secondary">TailWind</a>
+          </div>
+          <div class="child-ourWork">
+            <img src="img/work/Frame 2.png" alt="" />
+            <h1>Beacukai Sangatta</h1>
+            <a href="" class="mb-[24px] block">https://bcsangatta.beacukai.go.id/</a>
+            <a href="" class="button-secondary">WordPress</a>
+            <a href="" class="button-secondary">TailWind</a>
+            <a href="" class="button-secondary">Design</a>
+          </div>
+          <div class="child-ourWork">
+            <img src="img/work/Frame 3.png" alt="" />
+            <h1>Federasi Ice Skating Indonesia</h1>
+            <a href="" class="mb-[24px] block">https://fisid.org/</a>
+            <a href="" class="button-secondary">WordPress</a>
+            <a href="" class="button-secondary">TailWind</a>
+            <a href="" class="button-secondary">Design</a>
+          </div>
+          <div class="child-ourWork">
+            <img src="img/work/Frame 4.png" alt="" />
+            <h1>Retainer Orely Studio</h1>
+            <a href="" class="mb-[24px] block">https://retainer.orely.co/</a>
+            <a href="" class="button-secondary">WordPress</a>
+            <a href="" class="button-secondary">TailWind</a>
+          </div>
+        </div>
+        <div class="mt-[65px] text-center">
+          <a href="#get-started" class="button-primary">Our Work</a>
+        </div>
+      </section>
+      <section id="testimoni" class="bg-header">
+        <div class="testi text-center">
+          <h1 class="font-bold">
+            <span class="text-gradient">What people say about</span><br />
+            Mangcoding Team?
+          </h1>
+          <p>
+            “ It was a great experience to work with <br />
+            Mangcoding, we love the details result, and <br />
+            professionalism. “
+          </p>
+          <div class="image">
+            <img src="img/testi.png" alt="" class="mx-auto" />
+            <h5 class="font-bold">Riko Sapto Dimo</h5>
+            <p>Managing Director Orely.co</p>
+          </div>
+          <input type="radio" />
+          <input type="radio" />
+          <input type="radio" />
+        </div>
+      </section>
+      <sectio id="blog">
+        <div class="our-blog text-center">
+          <h1>Our Blog</h1>
+          <div class="blog flex">
+            <div class="child-blog">
+              <img src="img/blog 1.png" alt="" />
+              <p>8 Alasan Pentingnya Melakukan Pencadangan Situs Web</p>
+            </div>
+            <div class="child-blog">
+              <img src="img/blog 2.png" alt="" />
+              <p>8 Alasan Pentingnya Melakukan Pencadangan Situs Web</p>
+            </div>
+            <div class="child-blog">
+              <img src="img/blog 3.png" alt="" />
+              <p>8 Alasan Pentingnya Melakukan Pencadangan Situs Web</p>
+            </div>
+          </div>
+          <a href="" href="#get-started" class="button-primary">Our Work</a>
+        </div>
+      </sectio>
+    </main>
+    <footer>
+      <div class="build flex justify-between service-texture-2">
+        <div class="title">
+          <h1>Let's build a website with mangcoding</h1>
+          <p>Mangcoding team will help you in branding your product</p>
+        </div>
+        <div class="button">
+          <a href="" href="#get-started" class="button-primary">Build Website Now</a>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="parent-footer flex gap-10 justify-center">
+          <div class="child-footer head">
+            <div class="logo items-center flex mb-10">
+              <img src="img/Logo.png" alt="" class="mr-2" />
+              <h1 class="font-bold">Mangcoding</h1>
+            </div>
+            <p>Mangcoding Team Will Help You In Branding Your Product asdMangcoding Team Will Help You In Branding Your Product asdMangcoding Team Will Help.</p>
+            <div class="image flex gap-6 mt-10">
+              <a href=""><img src="img/medsos/instagram.png" alt="" /></a>
+              <a href=""><img src="img/medsos/github.png" alt="" /></a>
+              <a href=""><img src="img/medsos/youtub.png" alt="" /></a>
+              <a href=""><img src="img/medsos/likedin.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold mb-6">Mangcoding</h5>
+            <p>
+              <span>Home</span>
+              <span>About</span>
+              <span>Service</span>
+              <span>Blog</span>
+              <span>Work</span>
+              <span>Resource</span>
+              <span>Contact</span>
+            </p>
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold mb-6">Service</h5>
+            <p>
+              <span>Custom WordPress Theme</span>
+              <span>Development Custom Plugin WordPress</span>
+              <span>Custom Shopify Theme Development</span>
+              <span>Custom App for Shopify Web</span>
+              <span>Application</span>
+            </p>
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold">Trusted Partner</h5>
+            <img src="img/orely.png" alt="" class="mt-6 mb-4" />
+            <img src="img/kiwa.png" alt="" />
+          </div>
+          <div class="child-footer">
+            <h5 class="font-bold mb-6">Service</h5>
+            <p class="mb-6"><i class="bi bi-envelope-fill mr-2"></i> hello@mangcoding.com</p>
+            <p class="mb-6">
+              <i class="bi bi-telephone-inbound-fill mr-2"></i>0266-6532078 <br />
+              WA:0857-5940-2332
+            </p>
+            <p>
+              <i class="bi bi-geo-alt-fill mr-2"></i>PT Anugrah Kreasi Digital. karang <br />
+              tengah, Cibadak - Sukabumi
+            </p>
+          </div>
+        </div>
+        <p class="text-center mt-20 copyright">© 2022 Mangcoding. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

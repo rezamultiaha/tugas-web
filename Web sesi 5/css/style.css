@@ -1,0 +1,208 @@
+main #brand {
+  padding-top: 52px;
+  padding-bottom: 59px;
+  background-color: white;
+}
+main #brand h1 {
+  font-size: 18px;
+  color: #646464;
+}
+main #brand .brands {
+  margin-top: 17px;
+}
+main #brand .brands .single-brand {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+main #brand .brands .single-brand:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  transform: scale(1.3);
+}
+main #brand .brands .single-brand:hover img {
+  filter: brightness(0.1);
+}
+main #service {
+  background-size: cover;
+  padding: 117px 120px;
+}
+main #service .main-service {
+  position: relative;
+}
+main #service .main-service h1 {
+  font-size: 35px;
+}
+main #service .main-service p > span {
+  display: block;
+}
+main #service .main-service a {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main #service .main-service .service {
+  margin-top: 50px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas: "shopify php assistans" "wordpress www assistans";
+}
+main #service .main-service .service .services {
+  text-align: center;
+  padding: 52px 65px 39px 65px;
+}
+main #service .main-service .service .services h5 {
+  margin-top: 30px;
+  margin-bottom: 11px;
+  font-size: 18px;
+}
+main #service .main-service .service .services p {
+  font-size: 14px;
+}
+main #service .main-service .service .shopify {
+  grid-area: shopify;
+  background-color: white;
+}
+main #service .main-service .service .php {
+  grid-area: php;
+  background-color: white;
+}
+main #service .main-service .service .wordpress {
+  grid-area: wordpress;
+  background-color: white;
+}
+main #service .main-service .service .www {
+  grid-area: www;
+  background-color: white;
+}
+main #service .main-service .service .assistans {
+  grid-area: assistans;
+  background-color: white;
+  padding: 71px 65px 44px 65px;
+  text-align: center;
+}
+main #service .main-service .service .assistans .title h4 {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 17px;
+  display: block;
+}
+main #service .main-service .service .assistans .title p {
+  font-size: 14px;
+}
+main #service .main-service .service .assistans .title-2 p {
+  margin-top: 83px;
+  margin-bottom: 16px;
+  display: 14px;
+}
+main #service .main-service .service .assistans .title-2 h4 > span {
+  display: block;
+  font-size: 14px;
+}
+main #work {
+  padding: 117px 120px 160px 120px;
+}
+main #work .title {
+  margin-bottom: 78px;
+}
+main #work .title h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+main #work .title p > span {
+  display: block;
+}
+main #work .work .child-work h5 {
+  margin-top: 44px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 18px;
+}
+main #our-work {
+  padding: 0 120px 133px 120px;
+}
+main #our-work .title h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+main #our-work .title p {
+  margin-bottom: 50px;
+}
+main #our-work .our-work .child-ourWork {
+  margin-top: 22px;
+}
+main #our-work .our-work .child-ourWork h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+main #testimoni {
+  padding: 80px 330px 58px 330px;
+}
+main #testimoni .testi h1 {
+  margin-bottom: 47px;
+  font-size: 32px;
+}
+main #testimoni .testi p {
+  font-size: 32px;
+}
+main #testimoni .testi .image {
+  margin-top: 46px;
+  margin-bottom: 49.14px;
+}
+main #testimoni .testi .image h5 {
+  margin-top: 19px;
+  font-size: 16px;
+}
+main #testimoni .testi .image p {
+  font-size: 14px;
+}
+main #blog .our-blog {
+  padding: 82px 120px 73px 120px;
+}
+main #blog .our-blog h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+main #blog .our-blog .blog {
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+main #blog .our-blog .blog p {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+}
+
+footer .build {
+  padding: 80px 120px;
+  align-items: center;
+}
+footer .build .title h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+footer .build .title p {
+  font-size: 18px;
+  color: #5a5a5a;
+}
+footer .footer {
+  padding: 48px 120px 24px 120px;
+}
+footer .footer .parent-footer .head {
+  margin-top: -15px;
+  width: 282px;
+}
+footer .footer .parent-footer .head p {
+  color: #5a5a5a;
+}
+footer .footer .parent-footer .child-footer h1 {
+  font-size: 20.63px;
+}
+footer .footer .parent-footer .child-footer p > span {
+  display: block;
+  margin-bottom: 24px;
+}
+footer .footer .copyright {
+  color: #5a5a5a;
+}/*# sourceMappingURL=style.css.map */

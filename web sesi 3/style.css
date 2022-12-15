@@ -1,0 +1,89 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f2f8;
+}
+
+.text {
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding: 10px 0px;
+  color: #274ae5;
+}
+.container {
+  width: 550px;
+  margin: 7rem auto;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.row:not(:first-of-type) {
+  margin: 15px 0px;
+}
+.row > label {
+  float: left;
+  width: 150px;
+  min-height: 20px;
+  margin-top: 5px;
+}
+.row:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select {
+  width: 300px;
+  padding: 5px 10px;
+  border: solid 1px #ccc;
+  line-height: 20px;
+  border-radius: 5px;
+}
+select {
+  background: #fff;
+}
+
+.button {
+  text-align: center;
+}
+button {
+  background: #39a5db;
+  color: #fff;
+  padding: 15px 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 auto;
+}
+button:hover {
+  background: #fff;
+  color: #39a5db;
+  border: solid 1px #39a5db;
+  padding: 14px 9px;
+}
+label[for] {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.group-label {
+  float: left;
+}
+.group-label > label:not(:last-child) {
+  margin-right: 15px;
+}

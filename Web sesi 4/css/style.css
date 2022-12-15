@@ -1,0 +1,541 @@
+@import url(css/fonts.css);
+@import url(fonts.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", cursive;
+}
+
+body {
+  background-color: #efefef;
+}
+
+.container nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+.container nav .first {
+  display: flex;
+}
+.container nav .first h3 {
+  font-size: 40px;
+  padding: 5px;
+  margin: 0.7rem 2rem;
+}
+.container nav .first ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+}
+.container nav .first ul li > a {
+  color: black;
+  margin: 0.5rem 2.5rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+.container nav .last {
+  display: flex;
+}
+.container nav .last ul {
+  align-items: center;
+  list-style: none;
+  display: flex;
+}
+.container nav .last ul li > a {
+  color: black;
+  margin: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.container .jumbotron {
+  display: flex;
+}
+.container .jumbotron .jumOne {
+  display: flex;
+  background-color: #efefef;
+  height: 400px;
+  position: relative;
+  align-content: center;
+  width: 65%;
+}
+.container .jumbotron .jumOne .title {
+  padding: 2rem;
+  width: 60%;
+  margin-top: 5rem;
+}
+.container .jumbotron .jumOne .title h5 {
+  margin-bottom: 10px;
+}
+.container .jumbotron .jumOne .title h2 {
+  margin-bottom: 10px;
+}
+.container .jumbotron .jumOne .title h2 span {
+  display: block;
+}
+.container .jumbotron .jumOne .title p {
+  margin-bottom: 10px;
+}
+.container .jumbotron .jumOne .title button {
+  background-color: #279b24;
+  width: 6rem;
+  height: 2rem;
+  border: none;
+  border-radius: 30px;
+}
+.container .jumbotron .jumOne .title button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.container .jumbotron .jumOne .gambar {
+  position: absolute;
+  top: 37px;
+  right: 0;
+}
+.container .jumbotron .jumTwo {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.container .jumbotron .jumTwo .one {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(240deg, rgba(8, 50, 168, 0.4), #0832a8), url(../img/back1.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+}
+.container .jumbotron .jumTwo .one div {
+  margin: 3rem auto;
+}
+.container .jumbotron .jumTwo .one div h5 {
+  color: white;
+}
+.container .jumbotron .jumTwo .one div h3 {
+  color: white;
+}
+.container .jumbotron .jumTwo .one div h3 span {
+  display: block;
+}
+.container .jumbotron .jumTwo .one div button {
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+}
+.container .jumbotron .jumTwo .one div button a {
+  text-decoration: none;
+  color: white;
+}
+.container .jumbotron .jumTwo .one div button:hover {
+  background-color: #0832a8;
+}
+.container .jumbotron .jumTwo .two {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(240deg, rgba(68, 214, 63, 0.4), #45a942), url(../img/back2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.container .jumbotron .jumTwo .two div {
+  margin: 4rem auto;
+}
+.container .jumbotron .jumTwo .two div h5 {
+  color: white;
+}
+.container .jumbotron .jumTwo .two div h3 {
+  color: white;
+}
+.container .jumbotron .jumTwo .two div h3 span {
+  display: block;
+}
+.container .jumbotron .jumTwo .two div button {
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid white;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+}
+.container .jumbotron .jumTwo .two div button a {
+  text-decoration: none;
+  color: white;
+}
+.container .jumbotron .jumTwo .two div button:hover {
+  background-color: #45a942;
+}
+.container .secOne .head {
+  background-color: whitesmoke;
+}
+.container .secOne .head ul {
+  list-style: none;
+  padding: 1rem;
+}
+.container .secOne .head ul li {
+  margin: 0 2.5rem;
+  display: inline;
+}
+.container .secOne .head ul li a {
+  text-decoration: none;
+  color: black;
+}
+.container .secOne .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.container .secOne .container-fluid .child-1 {
+  width: 20%;
+  height: 280px;
+  background-color: white;
+}
+.container .secOne .container-fluid .child-1 h4 {
+  margin: 1rem 2rem;
+}
+.container .secOne .container-fluid .child-1 h4 span {
+  display: block;
+}
+.container .secOne .container-fluid .child-1 h4::after {
+  content: "";
+  height: 2px;
+  width: 3vw;
+  background-color: #45a942;
+  display: inline-block;
+}
+.container .secOne .container-fluid .child-1 p {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.container .secOne .container-fluid .child-1 p span {
+  display: block;
+}
+.container .secOne .container-fluid .child-1 .next-previous {
+  margin: 1rem 0 1rem 2rem;
+}
+.container .secOne .container-fluid .child-1 button {
+  margin-left: 2rem;
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+}
+.container .secOne .container-fluid .child-1 button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.container .secOne .container-fluid .child-1 button:hover {
+  background-color: #279b24;
+  color: white;
+}
+.container .secOne .container-fluid .child-2 {
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  height: 280px;
+  padding: 1rem;
+  background-color: white;
+}
+.container .secOne .container-fluid .child-2 .price {
+  color: #76b28c;
+}
+.container .secOne .container-fluid .child-2 img {
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+.container .secOne .container-fluid .child-2 img:hover {
+  transform: scale(1.1);
+}
+.container .secTwo .head {
+  background-color: whitesmoke;
+}
+.container .secTwo .head ul {
+  list-style: none;
+  padding: 1rem;
+}
+.container .secTwo .head ul li {
+  margin: 0 2.5rem;
+  display: inline;
+}
+.container .secTwo .head ul li a {
+  text-decoration: none;
+  color: black;
+}
+.container .secTwo .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .secTwo .container-fluid .child-1 {
+  background-color: white;
+  width: 20%;
+  height: 280px;
+}
+.container .secTwo .container-fluid .child-1 h4 {
+  margin: 1rem 2rem;
+}
+.container .secTwo .container-fluid .child-1 h4 span {
+  display: block;
+}
+.container .secTwo .container-fluid .child-1 h4::after {
+  content: "";
+  height: 2px;
+  width: 3vw;
+  background-color: #45a942;
+  display: inline-block;
+}
+.container .secTwo .container-fluid .child-1 p {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.container .secTwo .container-fluid .child-1 p span {
+  display: block;
+}
+.container .secTwo .container-fluid .child-1 .next-previous {
+  margin: 1rem 0 1rem 2rem;
+}
+.container .secTwo .container-fluid .child-1 button {
+  margin-left: 2rem;
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+}
+.container .secTwo .container-fluid .child-1 button a {
+  text-decoration: none;
+  color: black;
+}
+.container .secTwo .container-fluid .child-2 {
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  height: 280px;
+  padding: 1rem;
+}
+.container .secTwo .container-fluid .child-2 .price {
+  color: #76b28c;
+}
+.container .secThree {
+  text-align: center;
+}
+.container .secThree .head {
+  text-align: left;
+  background-color: whitesmoke;
+}
+.container .secThree .head ul {
+  list-style: none;
+  padding: 1rem;
+}
+.container .secThree .head ul li {
+  margin: 0 2.5rem;
+  display: inline;
+}
+.container .secThree .head ul li a {
+  text-decoration: none;
+  color: black;
+}
+.container .secThree h2 {
+  margin: 2rem;
+}
+.container .secThree .container-fluid {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .secThree .container-fluid .child-2 {
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  width: 15%;
+  height: 280px;
+  padding: 1rem;
+  margin: 1rem;
+}
+.container .secThree .container-fluid .child-2 .price {
+  color: #76b28c;
+}
+.container .secThree button {
+  margin: 1rem;
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0);
+}
+.container .secThree button a {
+  text-decoration: none;
+  color: black;
+}
+.container .secThree h1::before {
+  content: "";
+  margin: 1rem auto;
+  height: 10vh;
+  width: 3px;
+  background-color: black;
+  display: block;
+}
+.container .secThree h1 {
+  font-size: 2rem;
+}
+.container .secFour .container-one {
+  justify-content: center;
+  display: flex;
+}
+.container .secFour .container-one .child-one {
+  padding: 1rem;
+  width: 30%;
+}
+.container .secFour .container-one .child-one div h5 {
+  color: #45a942;
+  margin: 1rem 0;
+}
+.container .secFour .container-one .child-one div p {
+  margin: 1rem 0;
+}
+.container .secFour .container-one .child-one div ol li {
+  margin: 1rem 2rem;
+}
+.container .secFour .container-one .child-two {
+  padding: 1rem auto;
+  text-align: center;
+  width: 45%;
+}
+.container .secFour .brand-title {
+  text-align: center;
+}
+.container .secFour .brand-title h4 {
+  color: #777;
+}
+.container .secFour .container-two {
+  justify-content: center;
+  display: flex;
+}
+.container .secFour .container-two .brand {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 1.8rem 0;
+  margin: 0.9rem 0;
+  width: 180px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.container .secFour .container-two .brand img {
+  width: 50%;
+}
+.container .secFour .container-two .brand:hover {
+  box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  transform: scale(1.1);
+}
+.container .secFour .container-two .brand:hover img {
+  filter: brightness(0.15);
+}
+.container .testimoni h4 {
+  background-color: white;
+  padding: 2rem;
+}
+.container .testimoni h4 img {
+  margin-right: 5px;
+}
+.container .testimoni .slider {
+  background-color: white;
+}
+.container .testimoni .slider .bintang-5 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .testimoni .slider .bintang-5 .child {
+  width: 30%;
+  height: 15rem;
+}
+.container .testimoni .slider .bintang-5 .child .tgl {
+  text-align: right;
+}
+.container .testimoni .slider .bintang-5 .child .tgl span {
+  color: #777;
+}
+.container .testimoni .slider .bintang-4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .testimoni .slider .bintang-4 .child {
+  width: 30%;
+  height: 15rem;
+}
+.container .testimoni .slider .bintang-4 .child .tgl {
+  text-align: right;
+}
+.container .testimoni .slider .bintang-4 .child .tgl span {
+  color: #777;
+}
+.container .testimoni ul {
+  text-align: center;
+  padding: 2rem;
+}
+.container .testimoni ul li {
+  align-items: center;
+  display: inline;
+  margin: 1rem 5rem;
+}
+.container .testimoni ul li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+.container .testimoni ul li a img {
+  margin-right: 1rem;
+}
+.container .footer {
+  background-color: black;
+}
+.container .footer .container-footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.container .footer .container-footer .child-footer-1 {
+  margin-left: 1rem;
+  width: 25%;
+}
+.container .footer .container-footer .child-footer-1 h1 {
+  margin-bottom: 2rem;
+}
+.container .footer .container-footer .child-footer-1 p {
+  color: #777;
+}
+.container .footer .container-footer .child-footer {
+  margin: 1rem;
+}
+.container .footer .container-footer .child-footer p span {
+  display: block;
+}
+.container .footer .container-footer .child-footer h5 {
+  margin-bottom: 2rem;
+}
+.container .footer .container-footer .child-footer p {
+  color: #777;
+}
+.container .footer .container-footer .child-footer .medsos a {
+  padding: 1rem 2rem 1rem 0;
+}
+.container .footer .title-footer {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
